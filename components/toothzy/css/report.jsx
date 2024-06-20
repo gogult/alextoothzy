@@ -11,14 +11,14 @@ const Report = () => {
 
  useEffect(() => {
    axios
-     .get("http://localhost:5000/items")
+     .get("https://blushing-efficient-trouble.glitch.me/items")
      .then((response) => setItems(response.data))
      .catch((error) => console.error(error));
  }, []);
 
  const addItem = () => {
    axios
-     .post("http://localhost:5000/items", { name })
+     .post("https://blushing-efficient-trouble.glitch.me/items", { name })
      .then((response) => {
        setItems([...items, response.data]);
        setName("");
@@ -28,7 +28,7 @@ const Report = () => {
 
  const updateItem = () => {
    axios
-     .put(`http://localhost:5000/items/${currentItem._id}`, { name })
+     .put(`https://blushing-efficient-trouble.glitch.me/items/${currentItem._id}`, { name })
      .then((response) => {
        setItems(
          items.map((item) =>
@@ -44,7 +44,7 @@ const Report = () => {
 
  const deleteItem = (id) => {
    axios
-     .delete(`http://localhost:5000/items/${id}`)
+     .delete(`https://blushing-efficient-trouble.glitch.me/items/${id}`)
      .then(() => setItems(items.filter((item) => item._id !== id)))
      .catch((error) => console.error(error));
  };

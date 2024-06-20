@@ -20,7 +20,7 @@ const Index1 = () => {
       const newItemData = { fname, lname, email, phone, date };
 
       axios
-        .post("http://localhost:5000/items", newItemData)
+        .post("https://blushing-efficient-trouble.glitch.me/items", newItemData)
         .then((response) => {
           setItems([...items, response.data]);
         })
@@ -32,7 +32,7 @@ const addtem = () => {
   
 
   axios
-    .post("http://localhost:5000/items", newItemData)
+    .post("https://blushing-efficient-trouble.glitch.me/items", newItemData)
     .then((response) => {
       setItems([...items, response.data]);
       setFname("");
