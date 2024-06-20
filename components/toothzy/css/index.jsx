@@ -52,7 +52,9 @@ const addtem = () => {
           <i class="fas fa-tooth"></i> TOOTHZY MULTISPEACLITY CINIC{" "}
         </a>
         <nav class="navbar">
-          <a href="#home" className=" text-blue-400">home</a>
+          <a href="#home" className=" text-blue-400">
+            home
+          </a>
           <a href="#about">about</a>
           <a href="#services">services</a>
           <a href="#team">treatment</a>
@@ -166,7 +168,7 @@ const addtem = () => {
               from infancy through the teen years
               <br />
               they have the experince and qualifications to th care for a
-              child's teeth,gums and mouth
+              child&apos;s teeth,gums and mouth
             </p>
           </div>
           <div class="box">
@@ -273,31 +275,52 @@ const addtem = () => {
         <form action="">
           <span>your name:</span>
           <div class="inputBox">
-            <input type="text"
-        value={fname}
-                          onChange={e => setFname(e.target.value)} placeholder="first name" />
-            <input type="text"
-        value={lname}
-                          onChange={e => setLname(e.target.value)} placeholder="last name" />
+            <input
+              type="text"
+              value={fname}
+              onChange={(e) => setFname(e.target.value)}
+              placeholder="first name"
+            />
+            <input
+              type="text"
+              value={lname}
+              onChange={(e) => setLname(e.target.value)}
+              placeholder="last name"
+            />
           </div>
 
           <span>your email :</span>
-          <input type="text"
-        value={email}
-                      onChange={e => setEmail(e.target.value)} placeholder="enter your email" class="box" />
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="enter your email"
+            class="box"
+          />
 
           <span>your number :</span>
-          <input type="text"
-        value={phone}
-                      onChange={e => setPhone(e.target.value)} placeholder="enter your number" class="box" />
+          <input
+            type="text"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            placeholder="enter your number"
+            class="box"
+          />
 
           <span>appointment date :</span>
-          <input 
-        value={date}
-                      onChange={e => setDate(e.target.value)}
-                       type="datetime-local" class="box" />
+          <input
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            type="datetime-local"
+            class="box"
+          />
 
-          <input type="submit" onClick={addItem} value="Book Appoinment"  class="btn" />
+          <input
+            type="submit"
+            onClick={addItem}
+            value="Book Appoinment"
+            class="btn"
+          />
         </form>
       </section>
 
@@ -326,7 +349,6 @@ const addtem = () => {
               ninjashub4@gmail.com
             </a>
           </div>
-
           <div class="box">
             <h3>call us</h3>
             <p>+61 (0) 3 2587 4569</p>
@@ -347,9 +369,7 @@ const addtem = () => {
         </div>
       </section>
 
-      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-      <script src="js/script.js"></script>
     </div>
   );
 };
